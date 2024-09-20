@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNW - STATUS UI</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="status-body">
+
+            <div class="playermicrophone">
+                <div class="microphone-body">
+                    <div class="dot-mic">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#5E92E1"/>
+                        </svg>
+                      </div>
+                      <div class="dot-mic1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#eee"/>
+                        </svg>
+                      </div>
+                      <div class="dot-mic2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#eee"/>
+                        </svg>
+                      </div>
+                </div>
+            </div>
+
+            <div class="playerhealthbar">
+                <div class="healbar-body">
+                    <div class="healbar">
+                        <p>HEALTH - <span>100</span>&nbsp;%</p>
+                    </div>
+                </div>
+
+                <div class="uid-body">
+                    <div class="player-uid">
+                        <p>UID : <span>1</span></p>
+                    </div>
+                </div>
+
+                <div class="armor-body">
+                    <div class="armorbar">
+                        <p>ARMOR - <span>100</span>&nbsp;%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playerstamina">
+                <div class="stamina-body">
+                    <div class="staminabar">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="playerimg-body">
+                <div class="img-player">
+                    <div class="profile-avt">
+                        <img id="profile" src="img/1.png" id="profile" alt="">
+                     </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                    <circle cx="45" cy="45" r="45" fill="#16191F"/>
+                </svg>
+            </div>
+
+            <div class="food-stress-body">
+                <div class="food-status">
+                    <div class="img-icon-food">
+                        <img src="img/ck_food.png" alt="">
+                    </div>
+                    <div class="foodbar">
+                        <div class="circle-food">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 42 42" fill="none" style="transform:rotate(-90deg)">
+                                <path d="M42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21ZM5.50986 21C5.50986 29.555 12.445 36.4901 21 36.4901C29.555 36.4901 36.4901 29.555 36.4901 21C36.4901 12.445 29.555 5.50986 21 5.50986C12.445 5.50986 5.50986 12.445 5.50986 21Z" fill="#101317"/>
+                                <circle id="circle-food" cx="21" cy="21" r="18" stroke-linecap="round" stroke-width="6px" />
+                            </svg>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <circle cx="25" cy="25" r="25" fill="#16191F"/>
+                    </svg>
+                </div>
+                <div class="stress-status">
+                    <div class="img-icon-stress">
+                        <img src="img/ck_brain.png" alt="">
+                    </div>
+                    <div class="stressbar">
+                        <div class="circle-stress">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 42 42" fill="none" style="transform:rotate(-90deg)">
+                                <path d="M42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21ZM5.50986 21C5.50986 29.555 12.445 36.4901 21 36.4901C29.555 36.4901 36.4901 29.555 36.4901 21C36.4901 12.445 29.555 5.50986 21 5.50986C12.445 5.50986 5.50986 12.445 5.50986 21Z" fill="#101317"/>
+                                <circle id="circle-stress" cx="21" cy="21" r="18" stroke-linecap="round" stroke-width="6px" />
+                            </svg>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <circle cx="25" cy="25" r="25" fill="#16191F"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="dist/loading-bar.js"></script>
+</body>
+</html>

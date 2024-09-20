@@ -1,0 +1,268 @@
+@font-face {
+    font-family: HitmakerRegular;
+    src: url(font/HitmarkerNormal-Regular.ttf);
+}
+
+@font-face {
+    font-family: HitmakerVF;
+    src: url(font/Hitmarker-VF.ttf);
+}
+
+:root {
+    --main-color: #2657B8;
+    --sec-color: #5E92E1;
+    --thir-color: #16191F;
+    --four-color: #101317;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    /* display: none; */
+}
+
+.playerimg-body {
+    /* display: none; */
+    z-index: 2;
+    position: relative;
+}
+
+.img-player img {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 73px;
+    height: 73px;
+    border-radius: 100%;
+}
+
+.playerhealthbar {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 260px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: var(--thir-color);
+    border-radius: 10px;
+}
+
+.healbar-body {
+    z-index: 5;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 250px;
+    height: 25px;
+    background-color: var(--four-color);
+    border-radius: 5px;
+}
+
+.healbar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #112752 0%, #2657B8 100%);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.healbar p {
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    font-family: HitmakerRegular;
+    color: #eee;
+    font-size: 10px;
+}
+
+.armor-body {
+    z-index: 5;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 250px;
+    height: 25px;
+    background-color: var(--four-color);
+    border-radius: 5px;
+}
+
+.armorbar {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #888 0%, #EEE 100%);
+}
+
+.armorbar p {
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    font-family: HitmakerRegular;
+    color: #eee;
+    font-size: 10px;
+}
+
+.uid-body {
+    z-index: 6;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 20px;
+    background-color: var(--four-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-uid p {
+    font-family: HitmakerRegular;
+    font-size: 8px;
+    color: #eee;
+}
+
+.playerstamina {
+    z-index: 1;
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    width: 250px;
+    height: 15px;
+    flex-shrink: 0;
+    background-color: var(--thir-color);
+    border-radius: 0px 0px 68px 91px;
+}
+
+.stamina-body {
+    z-index: 5;
+    position: absolute;
+    bottom: 3px;
+    right: 6px;
+    width: 230px;
+    height: 6px;
+    background-color: var(--four-color);
+    border-radius: 0px 0px 68px 91px;
+}
+
+.staminabar {
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 0px 68px 91px;
+    background: #E9AD12;
+}
+
+.playermicrophone {
+    z-index: 1;
+    position: absolute;
+    top: 6px;
+    left: 45px;
+    width: 108px;
+    height: 15px;
+    flex-shrink: 0;
+    background-color: var(--thir-color);
+    border-radius: 0px 36px 0px 0px;
+}
+
+.microphone-body {
+    position: absolute;
+    right: 20px;
+    top: -1px;
+    display: flex;
+}
+
+.dot-mic {
+    margin-right: 8px;
+}
+
+.dot-mic1 {
+    margin-right: 8px;
+}
+
+.food-stress-body {
+    /* z-index: 9; */
+    position: absolute;
+    top: 25px;
+    left: 340px;
+    display: flex;
+}
+
+.food-status {
+    margin-right: 10px;
+}
+
+.img-icon-food img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.foodbar {
+    position: absolute;
+    top: 3.5px;
+    left: 3.5px;
+}
+
+.stressbar {
+    position: absolute;
+    top: 3.5px;
+    left: 3.5px;
+}
+
+.img-icon-stress {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.img-icon-stress img {
+    z-index: 6;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+}
+
+.stress-status {
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+#circle-food {
+    stroke: #5E92E1;
+    stroke-dasharray: 120;
+    stroke-dashoffset: 20;
+    transition: 0.5s;
+}
+
+#circle-stress {
+    stroke: #5E92E1;
+    stroke-dasharray: 120px;
+    stroke-dashoffset: 40px;
+    transition: 0.5s;
+}
+
+/* .circle-stress {
+    position: absolute;
+    top: 1.5px;
+    left: 1.5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #112752;
+} */
